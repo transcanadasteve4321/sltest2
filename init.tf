@@ -2,7 +2,7 @@ data "terraform_remote_state" "first" {
   backend = "remote"
 
   config = {
-    hostname     = "spacelift.io" # 
+    hostname     = "app.spacelift.io" # 
     organization = "onevest"    # 
 
     workspaces = {
