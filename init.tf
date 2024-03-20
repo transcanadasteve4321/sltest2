@@ -12,5 +12,5 @@ data "terraform_remote_state" "first" {
 }
 
 output "ultimate_answer" {
-  value = data.terraform_remote_state.deepthought.outputs.stephen_temp_arn
+  value = data.terraform_remote_state.first.outputs.stephen_temp_arn
 }
