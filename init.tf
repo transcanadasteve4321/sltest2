@@ -12,6 +12,9 @@ data "terraform_remote_state" "first" {
 }
 
 # comment
+variable "region" {
+  type = string
+}
 
 output "ultimate_answer" {
   value = data.terraform_remote_state.first.outputs.stephen_temp_arn
